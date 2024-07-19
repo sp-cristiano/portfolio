@@ -329,6 +329,18 @@
 
 /* Position styling ends here */
 
+/* Floating styling starts here */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-clear {
+  clear: both;
+}
+/* Floating styling ends here */
+
 /* Background styling starts here */
 .bg-light {
   background-color: var(--auxiliary-tertiary-color);
@@ -475,6 +487,13 @@ div ul + div a img:hover {
   /* background-image: linear-gradient(to right, #000000, #000000, #ffffff ), url('../images/carousel images/ideas.jpg'); */
   /* animation-delay: 0s; */
 }
+.item1 img {
+  width: 100%;
+}
+
+.item1 button {
+  text-transform: uppercase;
+}
 
 .item2 {
   background-image: url("../images/carousel images/productivity.jpg");
@@ -499,7 +518,6 @@ div ul + div a img:hover {
   /* background-color: var(--auxiliary-tertiary-color); */
   /* color: var(--dark-color); */
   color: var(--auxiliary-tertiary-color);
-
 }
 .item2 .slogan5 {
   bottom: 5rem;
@@ -507,7 +525,6 @@ div ul + div a img:hover {
   /* background-color: var(--tertiary-color); */
   /* color: var(--dark-color); */
   color: var(--auxiliary-tertiary-color);
-
 }
 .item2 .slogan6 {
   bottom: 9rem;
@@ -515,19 +532,22 @@ div ul + div a img:hover {
   /* background-color: var(--auxiliary-tertiary-color); */
   /* color: var(--dark-color); */
   color: var(--auxiliary-tertiary-color);
-
 }
-.slogan2:hover, .slogan3:hover, .slogan4:hover, .slogan5:hover, .slogan6:hover{
+.slogan2:hover,
+.slogan3:hover,
+.slogan4:hover,
+.slogan5:hover,
+.slogan6:hover {
   background-color: var(--primary-color);
   color: var(--auxiliary-tertiary-color);
   transition: all 0.5s ease-in-out;
-
 }
 
 .item2 button {
   font-weight: bolder;
   transition: all 0.5s ease-in-out;
   background-color: var(--dark-color);
+  text-transform: uppercase;
 }
 
 .item2 button:hover {
@@ -547,6 +567,7 @@ div ul + div a img:hover {
 }
 .item3 button {
   font-weight: bolder;
+  text-transform: uppercase;
 }
 .item4 {
   /* background-color: var(--dark-color); */
@@ -555,6 +576,12 @@ div ul + div a img:hover {
 .item4 img {
   width: 5rem;
   font-weight: bolder;
+  transition: all 0.5s ease-in-out;
+}
+.item4 img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale3d(-1, 1, 1);
+  rotate: 360deg;
 }
 
 .item4 img.icon1 {
@@ -595,6 +622,7 @@ div ul + div a img:hover {
 }
 .item4 button {
   font-weight: bolder;
+  text-transform: uppercase;
 }
 .item4 button:hover {
   color: var();
@@ -604,8 +632,28 @@ section#aboutMeContainer {
   background-color: var(--tertiary-color);
 }
 
-#aboutMeContainer > article {
-  border-top: solid var(--auxiliary-primary-color) 0.2rem;
+/* #profExp */
+#aboutMeContainer ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 4rem;
+
+  /* list-style: square outside */
+  /* border-top: solid var(--auxiliary-primary-color) 0.2rem;
   border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
+  border-top-right-radius: 3rem; */
+}
+/* #profExp */
+#aboutMeContainer ul li{
+  padding:1rem;
+}
+
+#aboutMeContainer p a{
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  /* padding:1rem; */
+}
+#aboutMeContainer p a:hover{
+  color: var(--primary-color);
+  /* padding:1rem; */
 }
