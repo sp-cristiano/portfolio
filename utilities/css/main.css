@@ -38,6 +38,7 @@
   --tertiary-color: #adbbda;
   --auxiliary-tertiary-color: #ede8f5;
   --dark-color: #000000;
+  --bg-color: #f3f1f6;
 }
 /* Background color starts here */
 .bg-primary {
@@ -210,36 +211,41 @@
 .p-7 {
   padding: 0.7rem;
 }
-
+.p-8{
+  padding: 1rem;
+}
 /* padding styling endshere */
 
 /* margin styling starts here */
 .m-1 {
-  padding: 0.1rem;
+  margin: 0.1rem;
 }
 
 .m-2 {
-  padding: 0.2rem;
+  margin: 0.2rem;
 }
 
 .m-3 {
-  padding: 0.3rem;
+  margin: 0.3rem;
 }
 
 .m-4 {
-  padding: 0.4rem;
+  margin: 0.4rem;
 }
 
 .m-5 {
-  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 .m-6 {
-  padding: 0.6rem;
+  margin: 0.6rem;
 }
 
 .m-7 {
-  padding: 0.7rem;
+  margin: 0.7rem;
+}
+.m-8{
+  margin: 1rem
 }
 
 /* margin styling endshere */
@@ -353,6 +359,9 @@
 
 #menuSection {
   background-color: var(--dark-color);
+  position: fixed;
+  top:0rem;
+  z-index: 100;
 }
 
 #logoText {
@@ -389,7 +398,9 @@ div ul + div a img:hover {
   /* width: 1.8rem; */
   transform: rotate(360deg);
 }
-
+main{
+  padding-top: 3rem;
+}
 #chooseLanguageContainer:hover .languageChoice {
   display: flex;
   flex-direction: column;
@@ -407,7 +418,7 @@ div ul + div a img:hover {
 
 #slideCarouselContainer {
   /* background-color: var(--secondary-color); */
-  height: 55rem;
+  height: 60rem;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -484,6 +495,7 @@ div ul + div a img:hover {
     animation-delay: 0s;
 } */
 .item1 {
+  background-color: var(--bg-color);
   /* background-image: linear-gradient(to right, #000000, #000000, #ffffff ), url('../images/carousel images/ideas.jpg'); */
   /* animation-delay: 0s; */
 }
@@ -629,7 +641,9 @@ div ul + div a img:hover {
 }
 
 section#aboutMeContainer {
-  background-color: var(--tertiary-color);
+  background-color: var(--bg-color);
+  padding-top: 3rem;
+  /* background-color: var(--tertiary-color); */
 }
 
 /* #profExp */
@@ -644,16 +658,43 @@ section#aboutMeContainer {
   border-top-right-radius: 3rem; */
 }
 /* #profExp */
-#aboutMeContainer ul li{
-  padding:1rem;
+#aboutMeContainer ul li {
+  padding: 1rem;
 }
 
-#aboutMeContainer p a{
-  color: var(--secondary-color);
-  background-color: var(--tertiary-color);
-  /* padding:1rem; */
+#aboutMeContainer p a {
+
 }
-#aboutMeContainer p a:hover{
+#aboutMeContainer p a:hover {
   color: var(--primary-color);
   /* padding:1rem; */
+}
+
+#developmentToolsContainer{
+  margin-top: 3rem;
+}
+
+.marqueeContainer {
+  overflow: hidden;
+}
+.marqueeContent {
+  /* display: flex; */
+  animation: scrolling 10s linear infinite;
+  /* overflow: hidden; */
+}
+.marqueeContent div {
+  display: flex;
+  flex: 0 0 calc((100vw - 20%) / 30);
+  margin: 0 1rem;
+}
+.marqueeContent div img {
+  width: 100%;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-80vw);
+  }
 }
