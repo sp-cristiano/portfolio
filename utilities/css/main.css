@@ -39,6 +39,7 @@
   --auxiliary-tertiary-color: #ede8f5;
   --dark-color: #000000;
   --bg-color: #f3f1f6;
+  --bg-light: #fff;
 }
 /* Background color starts here */
 .bg-primary {
@@ -61,6 +62,9 @@
 }
 .bg-dark {
   background-color: var(--dark-color);
+}
+.bg-light{
+  background-attachment: var(--bg-light);
 }
 /* Background color ends here */
 
@@ -263,6 +267,9 @@
 .w-30 {
   width: 30%;
 }
+.w-20{
+  width: 20%;
+}
 .w-10 {
   width: 130px;
 }
@@ -312,6 +319,50 @@
 .br-7 {
   border-radius: 7rem;
 }
+
+.btrr-1 {
+  border-top-right-radius: 1rem;
+}
+.btrr-2 {
+  border-top-right-radius: 2rem;
+}
+.btrr-3 {
+  border-top-right-radius: 3rem;
+}
+.btrr-4 {
+  border-top-right-radius: 4rem;
+}
+.btrr-5 {
+  border-top-right-radius: 5rem;
+}
+.btrr-6 {
+  border-top-right-radius: 6rem;
+}
+.btrr-7 {
+  border-top-right-radius: 7rem;
+}
+
+.btlr-1 {
+  border-top-left-radius: 1rem;
+}
+.btlr-2 {
+  border-top-left-radius: 2rem;
+}
+.btlr-3 {
+  border-top-left-radius: 3rem;
+}
+.btlr-4 {
+  border-top-left-radius: 4rem;
+}
+.btlr-5 {
+  border-top-left-radius: 5rem;
+}
+.btlr-6 {
+  border-top-left-radius: 6rem;
+}
+.btlr-7 {
+  border-top-left-radius: 7rem;
+}
 /* Border radius ends here */
 
 /*  Box shadow starts here */
@@ -359,6 +410,7 @@
 
 #menuSection {
   background-color: var(--dark-color);
+  /* background-color: var(--bg-color); */
   position: fixed;
   top:0rem;
   z-index: 100;
