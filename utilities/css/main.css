@@ -38,8 +38,10 @@
   --tertiary-color: #adbbda;
   --auxiliary-tertiary-color: #ede8f5;
   --dark-color: #000000;
+  --dark-transparent:#111010c5;
   --bg-color: #f3f1f6;
   --bg-light: #fff;
+  --danger: #ff0000;
 }
 /* Background color starts here */
 .bg-primary {
@@ -64,7 +66,10 @@
   background-color: var(--dark-color);
 }
 .bg-light{
-  background-attachment: var(--bg-light);
+  background-color: var(--bg-light);
+}
+.bg-dark-transparent{
+  background-color: var(--dark-transparent);
 }
 /* Background color ends here */
 
@@ -91,6 +96,9 @@
 /* Text color ends here */
 
 /* Font size starts here */
+.fs-0{
+  font-size: 0.8rem;
+}
 .fs-1 {
   font-size: 1rem;
 }
@@ -122,6 +130,36 @@
   font-size: 3.25rem;
 }
 /* Font size ends here */
+
+/* Font weight starts here */
+.fw-1 {
+  font-weight: 100;
+}
+.fw-2 {
+  font-weight: 200;
+}
+.fw-3 {
+  font-weight: 300;
+}
+.fw-4 {
+  font-weight: 400;
+}
+.fw-5 {
+  font-weight: 500;
+}
+.fw-6 {
+  font-weight: 600;
+}
+.fw-7 {
+  font-weight: 700;
+}
+.fw-8 {
+  font-weight: 800;
+}
+.fw-9 {
+  font-weight: 900;
+}
+/* Font weight ends here */
 
 /* Text alingment starts header */
 .center {
@@ -364,6 +402,21 @@
   border-top-left-radius: 7rem;
 }
 /* Border radius ends here */
+.border-1{
+  border: 0.1rem solid;
+}
+.border-2{
+  border: 0.2rem solid;
+}
+.bc-light{
+  border-color: var(--bg-light);
+}
+.bc-dark{
+  border-color: var(--bg-dark);
+}
+/* Border styling starts header */
+
+
 
 /*  Box shadow starts here */
 /* .shadow-1{
@@ -749,4 +802,11 @@ section#aboutMeContainer {
   100% {
     transform: translatex(-80vw);
   }
+}
+
+footer{
+  background: linear-gradient(to top, var(--dark-color), var(--dark-transparent) );
+}
+.required{
+  color: var(--danger);
 }
