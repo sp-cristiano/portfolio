@@ -38,7 +38,7 @@
   --tertiary-color: #adbbda;
   --auxiliary-tertiary-color: #ede8f5;
   --dark-color: #000000;
-  --dark-transparent:#111010c5;
+  --dark-transparent: #111010c5;
   --bg-color: #f3f1f6;
   --bg-light: #fff;
   --danger: #ff0000;
@@ -65,10 +65,10 @@
 .bg-dark {
   background-color: var(--dark-color);
 }
-.bg-light{
+.bg-light {
   background-color: var(--bg-light);
 }
-.bg-dark-transparent{
+.bg-dark-transparent {
   background-color: var(--dark-transparent);
 }
 /* Background color ends here */
@@ -96,7 +96,7 @@
 /* Text color ends here */
 
 /* Font size starts here */
-.fs-0{
+.fs-0 {
   font-size: 0.8rem;
 }
 .fs-1 {
@@ -202,7 +202,6 @@
   flex-grow: 2;
 }
 
-
 .justify-between {
   justify-content: space-between;
 }
@@ -254,7 +253,7 @@
 .p-7 {
   padding: 0.7rem;
 }
-.p-8{
+.p-8 {
   padding: 1rem;
 }
 /* padding styling endshere */
@@ -287,8 +286,8 @@
 .m-7 {
   margin: 0.7rem;
 }
-.m-8{
-  margin: 1rem
+.m-8 {
+  margin: 1rem;
 }
 
 /* margin styling endshere */
@@ -306,7 +305,7 @@
 .w-30 {
   width: 30%;
 }
-.w-20{
+.w-20 {
   width: 20%;
 }
 .w-10 {
@@ -403,21 +402,19 @@
   border-top-left-radius: 7rem;
 }
 /* Border radius ends here */
-.border-1{
+.border-1 {
   border: 0.1rem solid;
 }
-.border-2{
+.border-2 {
   border: 0.2rem solid;
 }
-.bc-light{
+.bc-light {
   border-color: var(--bg-light);
 }
-.bc-dark{
+.bc-dark {
   border-color: var(--bg-dark);
 }
 /* Border styling starts header */
-
-
 
 /*  Box shadow starts here */
 /* .shadow-1{
@@ -466,7 +463,7 @@
   background-color: var(--dark-color);
   /* background-color: var(--bg-color); */
   position: fixed;
-  top:0rem;
+  top: 0rem;
   z-index: 100;
 }
 
@@ -494,29 +491,28 @@ nav .wideScreen ol li:hover {
 }
 
 div ul li a img,
-div ul + div  img {
+div ul + div img {
   width: 1.8rem;
   transition: transform 0.6s ease-in-out;
 }
 
 div ul li a img:hover,
-div ul + div  img:hover {
+div ul + div img:hover {
   transform: rotate(360deg);
 }
-main{
+main {
   padding-top: 3rem;
 }
-#chooseLanguageContainer:hover .languageChoice,.languageChoice:hover  {
+#chooseLanguageContainer:hover .languageChoice,
+.languageChoice:hover {
   display: flex;
   flex-direction: column;
-  /* transition: all 0.6s ease-in-out; */
 }
-.cursor{
+.cursor {
   cursor: pointer;
 }
 .languageChoice {
-  top:40px;
-  /* background-color: var(--secondary-color); */
+  top: 40px;
   background-color: var(--dark-color);
   color: var(--bg-light);
 
@@ -527,7 +523,7 @@ main{
   border-radius: 1rem;
   color: var(--dark-color);
 }
-.transition-none{
+.transition-none {
   transition: none;
 }
 
@@ -582,13 +578,11 @@ main{
   height: 100%;
   top: 0;
   left: 0;
-  /* left: calc(50% - 100px); */
   opacity: 0;
   background-size: cover;
   background-position: center;
   animation: display 15s infinite;
   background-blend-mode: overlay;
-  /* background-color: var(--secondary-color); */
 }
 
 #slideCarouselContainer > .slideCarouselInnerContainer:nth-child(1) {
@@ -605,14 +599,8 @@ main{
   background-color: var(--dark-color);
 }
 
-/* .item1 {
-    background-image: linear-gradient(to right, var(--primary-color), var(--dark-color), var(--secondary-color), var(--dark-color)), url('../images/carousel images/item1.jpg');
-    animation-delay: 0s;
-} */
 .item1 {
   background-color: var(--bg-color);
-  /* background-image: linear-gradient(to right, #000000, #000000, #ffffff ), url('../images/carousel images/ideas.jpg'); */
-  /* animation-delay: 0s; */
 }
 .item1 img {
   width: 100%;
@@ -629,35 +617,27 @@ main{
 .item2 .slogan2 {
   top: 5rem;
   left: -5rem;
-  /* background-color: var(--primary-color); */
   color: var(--auxiliary-tertiary-color);
 }
 
 .item2 .slogan3 {
   top: 9rem;
   right: -5rem;
-  /* background-color: var(--auxiliary-primary-color); */
   color: var(--auxiliary-tertiary-color);
 }
 .item2 .slogan4 {
   top: 13rem;
   left: 15rem;
-  /* background-color: var(--auxiliary-tertiary-color); */
-  /* color: var(--dark-color); */
   color: var(--auxiliary-tertiary-color);
 }
 .item2 .slogan5 {
   bottom: 5rem;
   left: -5rem;
-  /* background-color: var(--tertiary-color); */
-  /* color: var(--dark-color); */
   color: var(--auxiliary-tertiary-color);
 }
 .item2 .slogan6 {
   bottom: 9rem;
   right: -5rem;
-  /* background-color: var(--auxiliary-tertiary-color); */
-  /* color: var(--dark-color); */
   color: var(--auxiliary-tertiary-color);
 }
 .slogan2:hover,
@@ -670,31 +650,28 @@ main{
   transition: all 0.5s ease-in-out;
 }
 
-.item2 button {
+.item2 button, .item1 button, .item3 button, .item4 button{
   font-weight: bolder;
   transition: all 0.5s ease-in-out;
-  background-color: var(--dark-color);
+  background-color: var(--primary-color);
+  color: var(--auxiliary-tertiary-color);
   text-transform: uppercase;
 }
 
-.item2 button:hover {
+.item2 button:hover,
+.item3 button:hover,
+.item1 button:hover {
   background-color: var(--auxiliary-tertiary-color);
-  transition: all 0.5s ease-in-out;
-  color: var(--dark-color);
+  transition: all 0.3s ease-in-out;
+  color: var(--primary-color);
 }
 
 .item3 {
-  /* background-image: linear-gradient(
-      to right,
-      var(--secondary-color),
-      var(--dark-color)
-    ),
-    url("../images/carousel images/item3.jpg"); */
-  /* animation-delay:10s; */
 }
 .item3 button {
-  font-weight: bolder;
+  /* font-weight: bolder;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out; */
 }
 .item4 {
   /* background-color: var(--dark-color); */
@@ -778,14 +755,13 @@ section#aboutMeContainer {
 }
 
 #aboutMeContainer p a {
-
 }
 #aboutMeContainer p a:hover {
   color: var(--primary-color);
   /* padding:1rem; */
 }
 
-#developmentToolsContainer{
+#developmentToolsContainer {
   margin-top: 3rem;
 }
 
@@ -814,9 +790,13 @@ section#aboutMeContainer {
   }
 }
 
-footer{
-  background: linear-gradient(to top, var(--dark-color), var(--dark-transparent) );
+footer {
+  background: linear-gradient(
+    to top,
+    var(--dark-color),
+    var(--dark-transparent)
+  );
 }
-.required{
+.required {
   color: var(--danger);
 }
