@@ -660,7 +660,8 @@ main {
 
 .item2 button:hover,
 .item3 button:hover,
-.item1 button:hover {
+.item1 button:hover,
+.item4 button:hover {
   background-color: var(--auxiliary-tertiary-color);
   transition: all 0.3s ease-in-out;
   color: var(--primary-color);
