@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,9 @@
     <section id="menuSection" class="d-flex w-100  justify-center">
         <header class="d-flex align-center justify-between w-80">
             <div class="" id="logoContainer">
-                <a href="" class="d-flex" title="iamspcristiano">
+                <a href="./index.html" class="d-flex" title="iamspcristiano">
                     <div>
-                        <img class="logoImg p-2" src="utilities/images/meCartoonHandsRight.png" alt="Logo" width="50px"
+                        <img class="logoImg p-2" src="utilities/images/meCartoonHandsRight.png" alt="Logo" width="50"
                             loading="lazy">
                     </div>
                     <div>
@@ -29,72 +30,99 @@
             <nav class="w-100">
                 <div class="wideScreen">
                     <ol class="d-flex justify-center align-center">
-                        <a href="" class="m-6" title="Home">
+                        <li class="p-5">
+                            <a href="./index.html" class="m-6" title="Home">Home</a>
+                        </li>
+                        <li class="p-5">
+                            <a href="#aboutMeContainer" class="m-6" title="About Us">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="p-5">
+                            <a href="#projectsContainer" class="m-6" title="Projects">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="p-5">
+                            <a href="#developmentToolsContainer" class="m-6" title="Tools">Tools</a>
+                        </li>
+                        <li class="p-5">
+                            <a href="#footer" class="m-6" title="Contact Us">Contact</a>
+                        </li>
+
+                        <!-- <a href="./index.html" class="m-6" title="Home">
                             <li class="p-5">Home</li>
                         </a>
                         <a href="#aboutMeContainer" class="m-6" title="About Us">
                             <li class="p-5">About</li>
                         </a>
+
                         <a href="/pages/en/projects.html" class="m-6" title="Projects">
                             <li class="p-5">Projects</li>
                         </a>
                         <a href="#developmentToolsContainer" class="m-6" title="Tools">
                             <li class="p-5">Tools</li>
                         </a>
-                        <a href="" class="m-6" title="Blog">
-                            <li class="p-5">Blog</li>
-                        </a>
-
-                        <a href="" class="m-6" title="Store">
-                            <li class="p-5">Store</li>
-                        </a>
                         <a href="#footer" class="m-6" title="Contact Us">
                             <li class="p-5">Contact</li>
-                        </a>
+                        </a> -->
                     </ol>
                 </div>
             </nav>
             <div class="p-5 d-flex">
                 <ul class="d-flex align-center justify-center p-5">
-                    <a href="" title="GitHub" class="p-3">
-                        <li><img src="utilities/images/socialMediaIcons/github.png" alt="GitHub" loading="lazy"></li>
-                    </a>
-                    <a href="" title="Whatsapp" class="p-3">
-                        <li><img src="utilities/images/socialMediaIcons/whatsapp.png" alt="Whatsapp" loading="lazy">
-                        </li>
-                    </a>
-                    <a href="" title="Linkedin" class="p-3">
-                        <li><img src="utilities/images/socialMediaIcons/lindedinBlack.png" alt="Linkedin"
-                                loading="lazy"></li>
-                    </a>
-                    <a href="" title="Youtube" class="p-3">
-                        <li><img src="utilities/images/socialMediaIcons/youtube.png" alt="Youtube" loading="lazy"></li>
-                    </a>
-                    <a href="" title="X" class="p-3">
-                        <li><img src="utilities/images/socialMediaIcons/twitter.png" alt="X" loading="lazy"></li>
-                    </a>
-                    <a href="" title="Facebook" class="p-3">
-                        <li><img src="utilities/images/socialMediaIcons/facebook.png" alt="Facebook" loading="lazy">
-                        </li>
-                    </a>
+                    <li>
+                        <a href="https://github.com/sp-cristiano" target="_blank" title="GitHub" class="p-3">
+                            <img src="utilities/images/socialMediaIcons/github.png" alt="GitHub" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/qr/3GCTWEMOTGG4O1" target="_blank" title="Whatsapp" class="p-3">
+                            <img src="utilities/images/socialMediaIcons/whatsapp.png" alt="Whatsapp" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/christian-odili-359771101/" target="_blank"
+                            title="Linkedin" class="p-3">
+                            <img src="utilities/images/socialMediaIcons/lindedinBlack.png" alt="Linkedin"
+                                loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@spcristiano" target="_blank" title="Youtube" class="p-3">
+                            <img src="utilities/images/socialMediaIcons/youtube.png" alt="Youtube" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/odili_official" target="_blank" title="X" class="p-3">
+                            <img src="utilities/images/socialMediaIcons/twitter.png" alt="X" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/iamspcristiano" target="_blank" title="Facebook" class="p-3">
+                            <img src="utilities/images/socialMediaIcons/facebook.png" alt="Facebook" loading="lazy">
+                        </a>
+                    </li>
                 </ul>
                 <div id="chooseLanguageContainer" class="p-5 d-flex-col justify-center relative align-center ">
-                    <a href="" class="p-3 bg-light" title="Change Language">
-                        <img src="utilities/images/languages/globe.png" alt="Language" loading="lazy">
-                    </a>
+                    <!-- <a href="" class="p-3 bg-light" title="Change Language"> -->
+                    <img src="utilities/images/languages/globe.png" alt="Language" loading="lazy"
+                        class="bg-light p-2 transition-none cursor" title="Change Language">
+                    <!-- </a> -->
                     <div class=" absolute p-4 languageChoice hide">
-                        <a href="" class="d-flex justify-between align-center  p-4 m-7 w-10" title="English">
+                        <a href="./index.html" class="d-flex justify-between align-center  p-4 m-7 w-10" title="English">
                             <div>
                                 <img src="utilities/images/languages/eng.png" alt="English" loading="lazy">
                             </div>
-                            <p>EN</p>
+                            <p class="fw-9">EN</p>
                         </a>
                         <hr class="w-100">
-                        <a href="" class="d-flex justify-between align-center p-4 m-7 w-10" title="Portuguese">
+                        <a href="./pages/pt/index_pt.html" class="d-flex justify-between align-center p-4 m-7 w-10" title="Portuguese">
                             <div>
                                 <img src="utilities/images/languages/pt.png" alt="Portuguese" loading="lazy">
                             </div>
-                            <p>PT</p>
+                            <p class="fw-9">PT</p>
                         </a>
 
                     </div>
@@ -327,12 +355,18 @@
                         exploring new technologies, or simply
                         spending quality time with family and friends, I believe in the importance of a balanced life.
                     </p>
-                    <p class="fs-3 p-5">
+                    <!-- <p class="fs-3 p-5">
                         I am always excited to connect with fellow professionals, explore new opportunities, and share
                         insights. Feel free to
                         reach out to me by clicking on this <a href="mailto:odili.official@gmail.com">send me an
                             email</a> link or connect with me on social media by scanning the
                         bar code at the footer of this website. Let's collaborate to harness the
+                        power of information systems and drive the future of business together!
+                    </p> -->
+                    <p class="fs-3 p-5">
+                        I am always excited to connect with fellow professionals, explore new opportunities, and share
+                        insights. Feel free to
+                        reach out to me through my social media handles located at the top of this site or you can send me an email by filling the contact form at the bottom of this website. Let's collaborate to harness the
                         power of information systems and drive the future of business together!
                     </p>
                     <p class="fs-3 p-5">
@@ -438,6 +472,13 @@
                         </div>
                     </a>
                 </div>
+                <div class="w-100 d-flex-col justify-center align-center">
+                    <a href="/pages/en/projects.html" class="m-8 p-8 bg-primary tc-aux-tertiary fw-7 br-3"
+                        title="View All Projects">
+                        View All Projects
+                    </a>
+
+                </div>
             </div>
         </section>
         <section id="developmentToolsContainer" class="w-100 d-flex justify-center align-center p-8">
@@ -475,7 +516,8 @@
                         <div><img src="./utilities/images/tools/microsoftsql.png" alt="Microsoft SQL Server"
                                 loading="lazy">
                         </div>
-                        <div><img src="./utilities/images/tools/oracledb.png" alt="Oracle Database" loading="lazy"></div>
+                        <div><img src="./utilities/images/tools/oracledb.png" alt="Oracle Database" loading="lazy">
+                        </div>
                         <div><img src="./utilities/images/tools/mongodb.png" alt="MongoDB" loading="lazy"></div>
                         <div><img src="./utilities/images/tools/cassandra.png" alt="Cassandra" loading="lazy"></div>
                         <div><img src="./utilities/images/tools/redis.png" alt="Redis" loading="lazy"></div>
@@ -483,9 +525,11 @@
                         <div><img src="./utilities/images/tools/azure.png" alt="Microsoft Azure Synapse Analytics"
                                 loading="lazy"></div>
                         <div><img src="./utilities/images/tools/teradata.png" alt="Teradata" loading="lazy"></div>
-                        <div><img src="./utilities/images/tools/ibmdb2.png" alt="IBM Db2 Warehouse" loading="lazy"></div>
+                        <div><img src="./utilities/images/tools/ibmdb2.png" alt="IBM Db2 Warehouse" loading="lazy">
+                        </div>
                         <div><img src="./utilities/images/tools/redshift.png" alt="RedShift" loading="lazy"></div>
-                        <div><img src="./utilities/images/tools/bigquery.png" alt="Google BigQuery" loading="lazy"></div>
+                        <div><img src="./utilities/images/tools/bigquery.png" alt="Google BigQuery" loading="lazy">
+                        </div>
                         <div><img src="./utilities/images/tools/snowflake.png" alt="Snowflake" loading="lazy"></div>
                     </div>
                 </div>
@@ -493,7 +537,7 @@
         </section>
     </main>
     <footer id="footer" class="w-100 d-flex-col justify-center align-center  tc-aux-tertiary ">
-        <div class="w-80 d-flex justify-between align-center m-8" >
+        <div class="w-80 d-flex justify-between align-center m-8">
             <div>
                 <h4>QUICK LINKS</h4>
                 <ol>
@@ -531,7 +575,8 @@
                         </legend>
                         <div class="d-flex-col aling-start m-5 ">
                             <label for="subject" class="fw-6">Subject <span class="required">*</span></label>
-                            <input type="text" id="subject" name="subject" class="w-100 p-2" placeholder="Subject" required>
+                            <input type="text" id="subject" name="subject" class="w-100 p-2" placeholder="Subject"
+                                required>
                         </div>
                         <div class="d-flex-col aling-start m-5 ">
                             <label for="name" class="fw-6">Name <span class="required">*</span></label>
@@ -539,23 +584,26 @@
                         </div>
                         <div class="d-flex-col aling-start m-5">
                             <label for="phone" class="fw-6">Phone Number <span class="required">*</span></label>
-                            <input type="tel" id="phone" name="phone" class="w-100 p-2" placeholder="Phone Number" required>
+                            <input type="tel" id="phone" name="phone" class="w-100 p-2" placeholder="Phone Number"
+                                required>
                         </div>
                         <div class="d-flex-col aling-start m-5">
                             <label for="email" class="fw-6">Email <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" class="w-100 p-2" placeholder="Email"  required>
+                            <input type="email" id="email" name="email" class="w-100 p-2" placeholder="Email" required>
                         </div>
                         <div class="d-flex-col aling-start m-5">
                             <label for="file" class="fw-6">Upload a file:</label>
-                            <input type="file" id="file" name="file"  class="w-100 p-2">
+                            <input type="file" id="file" name="file" class="w-100 p-2">
                         </div>
 
                         <div class="d-flex-col aling-start m-5 ">
                             <label for="message" class="fw-6">Message <span class="required">*</span></label>
-                            <textarea name="message" id="message" class="w-100 p-2 h-10" placeholder="Write your message here" required></textarea>
+                            <textarea name="message" id="message" class="w-100 p-2 h-10"
+                                placeholder="Write your message here" required></textarea>
                         </div>
                         <div class="d-flex-col align-center m-5 p-8 ">
-                            <button type="submit" class="tc-aux-tertiary fs-2 fw-7  border-2 br-1 bc-light p-5">Send Message</button>
+                            <button type="submit" class="tc-aux-tertiary fs-2 fw-7  border-2 br-1 bc-light p-5">Send
+                                Message</button>
                         </div>
 
 
@@ -564,7 +612,9 @@
             </div>
         </div>
         <div class=" p-8 center w-100 bg-dark fs-0">
-            <p class="p-5">This website was designed and created  with <img src="./utilities/images/projectImages/heart.png" width="20" alt="love" loading="lazy"> by <b>Odili Chinedum Christian</b></p>
+            <p class="p-5">This website was designed and created with <img
+                    src="./utilities/images/projectImages/heart.png" width="20" alt="love" loading="lazy"> by <b>Odili
+                    Chinedum Christian</b></p>
             <p>&copy; 2024 All Rights Reserved. <b>iamspcristiano</b></p>
         </div>
     </footer>

@@ -202,6 +202,7 @@
   flex-grow: 2;
 }
 
+
 .justify-between {
   justify-content: space-between;
 }
@@ -480,45 +481,54 @@
   font-size: 0.8rem;
 }
 
-nav .wideScreen ol a {
+nav .wideScreen ol li {
   color: var(--auxiliary-tertiary-color);
   border-bottom: 0.2rem solid transparent;
   transition: all 0.6s ease-in-out;
   font-weight: bolder;
 }
 
-nav .wideScreen ol a:hover {
+nav .wideScreen ol li:hover {
   border-bottom: 0.2rem solid var(--auxiliary-tertiary-color);
   transition: all 0.6s ease-in-out;
 }
 
-div ul a li img,
-div ul + div a img {
+div ul li a img,
+div ul + div  img {
   width: 1.8rem;
   transition: transform 0.6s ease-in-out;
 }
 
-div ul a li img:hover,
-div ul + div a img:hover {
-  /* width: 1.8rem; */
+div ul li a img:hover,
+div ul + div  img:hover {
   transform: rotate(360deg);
 }
 main{
   padding-top: 3rem;
 }
-#chooseLanguageContainer:hover .languageChoice {
+#chooseLanguageContainer:hover .languageChoice,.languageChoice:hover  {
   display: flex;
   flex-direction: column;
+  /* transition: all 0.6s ease-in-out; */
 }
-
+.cursor{
+  cursor: pointer;
+}
 .languageChoice {
-  top: 70px;
-  background-color: var(--secondary-color);
+  top:40px;
+  /* background-color: var(--secondary-color); */
+  background-color: var(--dark-color);
+  color: var(--bg-light);
+
   z-index: 1;
 }
 .languageChoice a:hover {
   background-color: var(--auxiliary-tertiary-color);
-  border-radius: 2rem;
+  border-radius: 1rem;
+  color: var(--dark-color);
+}
+.transition-none{
+  transition: none;
 }
 
 #slideCarouselContainer {
