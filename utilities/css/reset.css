@@ -117,8 +117,8 @@ embed,
 object {
   max-width: 100%;
   border: 0;
-  overflow: hidden;
-  margin-top: 5rem;
+  /* overflow: hidden; */
+  /* margin-top: 5rem; */
 }
 
 /* Accessibility improvements */
